@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<style>
+    .sooraj{
+        width: 200px;
+        height: 100px ;
+        
+        background-color: green;
+        border: 20px solid red ;
+        border-radius: 20px;
+        animation-name: movement;
+        position: relative;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear ;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes movement {
+        0%{
+             top:0;
+             left: 0;
+             color: red;
+        }
+        25%{
+            top: 0;
+            left: 1230px;
+            color: blue;
+        }
+        50%{
+            top: 500px;
+            left: 1230;
+            color: green;
+        }
+        75%{
+            left: 0;
+            top: 500px;
+            color: yellow;
+            }
+        100%{
+            left: 0;
+            top: 0;
+            color: brown;
+        }
+    }
+</style>
+<body>
+    <div class="sooraj">
+
+    </div>
+</body>
+</html>
